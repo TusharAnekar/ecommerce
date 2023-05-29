@@ -1,0 +1,33 @@
+.header {
+  background-color: #007bb5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr );
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "heading heading icons"
+    "search search search";
+}
+
+.header .heading {
+  grid-area: heading;
+}
+
+.header .search {
+  grid-area: search;
+}
+
+.header .icons {
+  grid-area: icons;
+}
+
+@media (min-width: 768px) {
+  .header {
+  grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "heading search icons"
+  }
+}
+
+@media (min-width: 1024px) {
+    
+}
